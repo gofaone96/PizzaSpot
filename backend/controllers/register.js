@@ -9,10 +9,6 @@ const jwt = require("jsonwebtoken");
 exports.register = async (req, res) => {
   const { name, email, surname, password,account } = req.body;
 
-//   const image = "https://res.cloudinary.com/dkvrb3pye/image/upload/v1675240135/vecteezy_profile-user-icon-isolated-on-white-background-vector-eps10__a4gxpc.jpg";
-//   const ratings = 6.0;
-//   const votes = 0;
-//   const is_suspended = false;
 
   try {
     const data = await client.query(`SELECT * FROM Users WHERE email= $1;`, [

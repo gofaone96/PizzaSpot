@@ -1,18 +1,7 @@
 const client = require("../config/db_config");
 const bcrypt = require("bcrypt");
 
-var nodemailer = require("nodemailer");
-var smtpTransport = require("nodemailer-smtp-transport");
 
-const sender = "";
-
-var transporter = nodemailer.createTransport({
-  service: "hotmail",
-  auth: {
-    user: "", //
-    pass: "Letsdoit!", //
-  },
-});
 
 emailDetails = {
   from: "", //where the email is from
