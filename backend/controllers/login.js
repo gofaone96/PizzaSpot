@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 
 const client = require("../config/db_config");
 
-const jwt = require("jsonwebtoken");
+const jwt = require("");
 
 //Login Function
 exports.login = async (req, res) => {

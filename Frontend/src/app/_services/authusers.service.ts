@@ -4,6 +4,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class AuthusersService {
+  register(name: string, email: string, password: string) {
+    throw new Error('Method not implemented.');
+  }
   constructor(private http: HttpClient) {}
   //auth
   postData(data: any) {
